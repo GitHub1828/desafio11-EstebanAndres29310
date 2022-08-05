@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color:#fdc131;
+    color: rgb(8, 8, 7);
+    width: 100%;
+    height: 10%;
+    padding: 10px; 
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 24px;
+    float: left;
+    
+}
+.logo span{
+    color: rgb(252, 248, 248);
+}
+
+/* .menu{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu:hover{
+    color: #fff;
+
+} */
+
+.barra{
+    float: right;
+    padding: 5px;
+}
+.barra ul li{
+    /* "list style" es para quitar las viñetas a la lista "ul+li" */
+    /* aplico display inlineblock para que la lista quede una al lado de la otra  */
+    list-style: none;
+    margin-left: 15px;
+    /* margin left para agregar un poco de espaciado en la lista  */
+    display: inline-block;
+}
+.barra a{
+/* es para modificar todas las "a" dentro de la lista llamda "barra" con el valor none*/
+text-decoration: none;
+color: #000;
+float: right;
+font-size: 18px;
+text-transform: capitalize;
+}
+
+.barra a:hover{
+    color: #fff;
+}
+
+main{
+    /* height: calc(100vh - 80px); */
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url(/img/imagenFondo.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    color: #fdc131;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.call{
+    width: 50%;
+    height: auto;
+    float: right;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* border: 2px solid #fff; */
+    padding: 40px;
+    margin: 30px;
+}
+
+.call p{
+    margin-bottom: 30px;
+}
+
+.botoncall{
+    background-color: #fdc131;
+    color:#000;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 20px;
+    /* Quitar subrayado con text decoration NONE */
+    text-decoration: none;
+    /* border-radius: 5px;  */
+    margin-bottom: 30px;
+} 
+
+.botoncall:hover{
+    color:#fff;
+    /* border: 2px solid #fdc131; */
+    border: 1px solid #fff;
+
+}
+
+/* /* >>>>>>>>>>>>>>>>> INICIA WORK *>>>>>>>>>>>>>>>>>>/ */
+
+h2{
+    text-align: center; 
+    background-color: #fdc131;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.galeria{
+    height: auto;
+    /* height: calc(100vh - 80px); */
+    /* height: 100vh; */
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px); 
+    /* grid-template-columns: repeat(4, 1fr); version web */
+    /* grid-template-rows: repeat(3, 200px); version web */
+    padding: 30px;
+    grid-gap: 30px;
+    justify-content: space-between;
+    
+}
+
+.item{
+    /* border-radius: 5px; */
+    /* filter: blur(0%); */
+    transition: all 0.7s;
+}
+
+.item:hover{
+    /* filter: blur(70%); */
+    transform: scale(1.05);
+    transition: all 0.7s;
+
+}
+
+.item1{
+    background-image: url(/img/1_NinaNaturalThumb.png);
+    background-position: center;
+    background-size: cover;
+}
+.item2{
+    background-image: url(/img/2_Oxford_Thumb.png);
+    background-position: center;
+    background-size: cover;
+}
+.item3{
+    background-image: url(/img/3_Lassen_Thumb.png);
+    background-position: center;
+    background-size: cover;
+}
+.item4{
+    background-image: url(/img/4_Polo_Thumb.png);
+    background-position: center;
+    background-size: cover;
+}
+.item5{
+    background-image: url(/img/5_ElSudamericano_Thumb.png);
+    background-position: center;
+    background-size: cover;
+}
+.item6{
+    background-image: url(/img/6_LaEditorial_Thumb.png);
+    background-position: center;
+    background-size: cover;
+}
+.item7{
+    background-image: url(/img/7_TangoArgentino_Thumb.png);
+    background-position: center;
+    background-size: cover;
+}
+.item8{
+    background-image: url(/img/8_Logos_Thumb.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* /* >>>>>>>>>>>>>>>>> CIERRA WORK *>>>>>>>>>>>>>>>>>>/ */
+
+
+/* /* >>>>>>>>>>>>>>>>> INICIA AGENCY >>> */
+
+.agencia{
+    height: auto;
+    width: 100%;
+    /* background-color: black; */
+    background-color: #fdc131;
+    font-family: 'Raleway', sans-serif;
+}
+
+.agencyimg{
+    height: 300px;
+    width: 100%;
+    background-image: url(/img/9_Press_Thumb.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.agencytext{
+    /* height: 400px; */
+    width: 100%;
+    background-color: #fdc131;
+    /* border: 2px solid #000; */
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    padding: 20px;
+    /* float: center; */
+}
+
+.agencytext p{
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* /* >>>>>>>>>>>>>>>>> CIERRA AGENCY *>>>>>>>>>>>>>>>>>>/ */
+
+.clientes{
+    height: auto;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
+    /* margin-top: 20px; */
+
+}
+
+.clientes h3{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.clientstext{
+    height: auto;
+    width: 100%;
+    color: #fdc131;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+/* /* >>>>>>>>>>>>>>>>> CIERRA CLIENTS *>>>>>>>>>>>>>>>>>>/ */
+
+/* /* >>>>>>>>>>>>>>>>> INICIA CONTACT >>> */
+.contact{
+    height: auto;
+    width: 100%;
+    background-color: #fdc131;
+    /* display: flex; */
+    /* text-align: center;  */
+    /* float: right; */
+   
+}
+
+.contactimg{
+    height: 240px;
+    width: 100%;
+    background-image: url(/img/contacto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contacttext{
+    /* height: 400px; */
+    width: 100%;
+    background-color: #fdc131;
+    /* border: 2px solid #000; */
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    padding: 20px;
+    /* float: center; */
+}
+
+.contacttext p{
+    /* height: 100%; */
+    /* width: 100%; */
+    color: #000;
+    background-color: #fdc131;
+    /* font-weight: lighter; */
+    font-size: 18px;
+    padding: 20px;
+    /* margin: center; */
+    margin-bottom: 20px;
+}
+
+.contacttext a{
+    height: 100%;
+    width: 100%;
+    color: #000;
+    background-color: #fdc131;
+    border: 2px solid #000;
+    /* font-weight: lighter; */
+    font-size: 22px;
+    padding: 10px;
+}
+
+.contacttext a:hover{
+    color: #fff;
+    border: 2px solid #fff;
+    
+}
+
+/* CONTACT // SECCION HTML */
+.formx{
+    height: auto;
+    width: 100%;
+    font-size: 20px;
+    font-variant: small-caps;
+    background-color: #fdc131;
+    font-family: 'Raleway', sans-serif;
+    padding: 40px;
+    color: #fff;
+}
+
+/* /* >>>>>>>>>>>>>>>>> CIERRA CONTACT *>>>>>>>>>>>>>>>>>>/ */
+
+/* /* >>>>>>>>>>>>>>>>> INICIA FOOTER >>> */
+
+footer{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #fdc131;
+    padding: 20px;
+    /* margin-top: 30PX; */
+}
+
+footer p{
+    margin-bottom: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer .redes i{
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 18px;
+    background-color: #fdc131;
+    /* margin-top: 20px; */
+}
+
+footer .redes i:hover{
+    color: #fff;
+}
+
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: #fdc131;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    font-size: 27px;
+    color: #000;
+}
+
+.subir:hover{
+    color: #fff;
+    background-color: #fdc131;
+    border: 2px solid #fdc131;
+}
+
+/* /* >>>>>>>>>>>>>>>>> CIERRA FOOTER *>>>>>>>>>>>>>>>>>>/ */
+
+/* MEDIA QUERY PANTALLA 360PX CELULAR */
+
+@media only screen and (min-width:360px) {
+    .header{
+        /* height: calc(100vh - 80px); */
+        /* text flex: wrap; */
+        text-align: center;
+        justify-content: center;
+        /* display: none; */
+    }
+    .barra{
+        float: none;
+        padding: 5px;
+    }
+
+    .main{
+        height: max-content;
+    }
+    .galeria {
+        grid-template-columns: 1fr 1fr ;
+        min-height: 100%;
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY PANTALLA 600PX A 768PX TABLET */
+
+@media only screen and (min-width:600px) and (max-width:768px) {
+    .call {
+        min-height: 300px;
+    }
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .item1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .item2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item5 {
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+    .item6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .item7{
+        grid-column: 3/4;
+        grid-row: 3/5;
+    }
+    .item8 {
+        grid-column: 2/3;
+        grid-row: 4/4;
+    }
+}
+
+/* MEDIA QUERY PANTALLA 768PX PC */
+
+@media only screen and (min-width:768px) {
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: "img1 img1 img2 img3"
+                             "img4 img5 img6 img6"
+                             "img7 img7 img8 img8";
+        height: auto;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .item1{
+        grid-area: img1;
+    }
+    .item2{
+        grid-area: img2;
+    }
+    .item3{
+        grid-area: img3;
+    }
+    .item4{
+        grid-area: img4;
+    }
+    .item5{
+        grid-area: img5;
+    }
+    .item6{
+        grid-area: img6;
+    }
+    .item7{
+        grid-area: img7;
+    }
+    .item8{
+        grid-area: img8;
+    }
+
+}
+
+/* MEDIA QUERY PANTALLA 1024PX PC-WIDESCREEN */
+
+@media only screen and (min-width:1024px) {
+    .galeria{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        grid-template-areas: "img1 img2 img3 img4 img4"
+                             "img1 img8 img8 img5 img6";
+    height: 500px;
+    width: auto;
+    justify-content: space-between;
+}
+    .item1{
+        grid-area: img1;
+    }
+    .item2{
+        grid-area: img2;
+    }
+    .item3{
+        grid-area: img3;
+    }
+    .item4{
+        grid-area: img4;
+    }
+    .item5{
+        grid-area: img5;
+    }
+    .item6{
+        grid-area: img6;
+    }
+    .item7{
+        grid-area: img7;
+    }
+    .item8{
+        grid-area: img8;
+    }
+
+}
